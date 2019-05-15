@@ -17,9 +17,10 @@ function flipCard(cardId) {
 	
 	console.log("User flipped " + cards[cardId]);
 	cardsInPlay.push(cards[cardId]);
-	
+    if(cardsInPlay.length > 1) {
+	  checkForMatch();
+    }
 
 };
 flipCard(0); 
-flipCard(2)
-checkForMatch();
+flipCard(2);
