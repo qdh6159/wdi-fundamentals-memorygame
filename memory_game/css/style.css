@@ -15,6 +15,20 @@ a {
 	margin: 0px 20px;
 
 }
+button {
+	text-decoration-line: none;
+	text-transform: uppercase;
+	font-family: "Raleway", sans-derif;
+	color: #ffffff;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 18px;
+	margin-left: 20px
+	margin-right:20px;
+	margin: 0px 20px;
+	background: none;
+	border: none;
+}
 
 h2 {
 	text-transform: uppercase;
@@ -100,6 +114,10 @@ footer {
 }
 
 a:hover {
+	border-bottom: 2px solid transparent;
+	border-bottom-color: white;
+}
+button:hover {
 	border-bottom: 2px solid transparent;
 	border-bottom-color: white;
 }

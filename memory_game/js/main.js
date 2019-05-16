@@ -59,3 +59,16 @@ function createBoard() {
 };
 
 createBoard();
+
+
+var resetTheGame = function(){
+    cardsInPlay=[];
+    for (var i = 0; i < cards.length; i++) {
+        var x = document.getElementsByTagName("img")[i];
+        x.setAttribute('src',"images/back.png");
+        }
+};
+	
+
+
+document.getElementsByTagName('button')[0].addEventListener('click', resetTheGame);
