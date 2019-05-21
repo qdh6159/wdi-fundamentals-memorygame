@@ -1,5 +1,11 @@
 console.log("Up and running!");
 
+$(function () {
+        $("header").hide(300).show(1000);
+        
+
+    })
+
 
 var cards = [
 {
@@ -60,13 +66,31 @@ function createBoard() {
 
 createBoard();
 
+$(function () {
+        $("img").hide(300).show(1000);
+        
+
+    })
+
+
 
 var resetTheGame = function(){
     cardsInPlay=[];
+    $(function () {
+        $("img").hide(300);
+        
+
+    })
     for (var i = 0; i < cards.length; i++) {
         var x = document.getElementsByTagName("img")[i];
         x.setAttribute('src',"images/back.png");
         }
+
+    $(function () {
+        $("img").show(1000);
+        
+
+    })
 };
 	
 
